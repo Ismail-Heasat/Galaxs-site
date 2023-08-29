@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    position: fixed;
+    background: #030303; 
+}
+
+nav .logo{
+    width: 80px;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+    font-size: 19px;
+}
+
+
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 90px;
+    color: rgb(255, 208, 0);
+    font-weight: 600;
+    
+}
+
+.content h3{
+    font-size: 40px;
+    color: rgb(255, 208, 0);
+    font-weight: 600;
+    
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+
+    @media(max-aspect-ratio:16/9){
+        .back-video{
+            width: 100%;
+            height: auto;
+
+        }
+}
+}
+
+@media(max-width:991px){
+    .KKK{
+        display: none;
+    }
+}
+
+
+.about{
+    background: #030303; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+
+
+/* This is the About section */
+
+
+
+.about h1  {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    color: rgb(255, 208, 0);
+    padding-top: 130px;
+    
+}
+
+
+.about p{
+    text-align: start;
+    max-width: 800px;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+
+
+/*
+.about img{
+    height: 300px;
+    width: 500px;
+    padding: 40px;
+}
+*/
+
+
+
+
+
+@media(max-width:991px)
+{
+    
+    .about p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+     
+
+    .about img{
+       margin-left: 10%;
+       margin-right: 10%;
+    }
+
+
+}
+
+
+
+
+/* This is the Our services section */
+
+
+.wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #030303; 
+}
+
+.wrapper h1  {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    color: rgb(255, 208, 0);
+    padding-top: 90px;
+}
+
+
+.wrapper p{
+    text-align: start;
+    max-width: 700px;
+    color: #ffffff;
+}
+
+
+
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card{
+    min-width: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0,0,2);
+    background: #030303;
+
+}
+
+.card:hover{
+background:rgba(228, 226, 217, 0.096) ;
+
+
+}
+
+.card h2{
+margin-bottom: 12px;
+font-weight: 800;
+text-align:center ;
+color: rgb(255, 208, 0);
+
+
+}
+
+.card p{
+
+    text-align: start;
+}
+
+
+
+@media(max-width:991px)
+{
+
+    .wrapper{
+        padding: 25px;
+
+    }
+
+    .wrapper h1{
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+        background: #393d4473;
+        
+    }
+
+    .card{
+        
+        background: #3c3e4227;
+
+    }
+
+}
+
+
